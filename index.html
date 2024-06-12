@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolu Ketan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bolu Ketan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#center-image">Image</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Selamat Datang di Website Resmi Bolu Ketan </h1>
+        <p>Silakan jelajahi website kami untuk mengetahui lebih lanjut tentang produk</p>
+        <a href="#about" class="cta-button">See More</a>
+    </section>
+
+
+    <section class="center-image" id="center-image">
+        <h2>Image</h2>
+        <div class="image-container">
+            <img src="image/cake.jpe" alt="Centered Image">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Kami hadir dengan berbagai varian bolu ketan, dari klasik hingga inovatif</p>
+        <div class="about-content">
+            <img src="image/cake2.jpg" alt="About Us Image">
+            <div>
+                <p>Kami dengan senang hati memperkenalkan Anda kepada kelezatan dan keunikan Bolu Ketan. Di sini, 
+                    Anda akan menemukan berbagai varian bolu ketan yang dibuat dengan penuh cinta dan dedikasi, 
+                    menggunakan bahan-bahan alami terbaik untuk menciptakan pengalaman rasa yang tak terlupakan.</p>
+                <p>Bolu Ketan didirikan dengan tujuan untuk menghadirkan cita rasa tradisional dengan sentuhan modern. 
+                    Kami bangga dapat membawa kekayaan warisan kuliner Indonesia ke dalam setiap gigitan bolu kami. 
+                    Setiap produk kami dibuat dengan resep yang telah teruji dan metode yang menjaga keaslian rasa.</p>
+                <p>Kami berkomitmen untuk selalu menjaga kualitas produk dan kepuasan pelanggan. Setiap bolu yang kami 
+                    buat melalui proses seleksi bahan yang ketat dan kontrol kualitas yang tinggi. Kami percaya bahwa 
+                    rasa yang otentik dan pelayanan yang baik adalah kunci utama untuk meraih kepercayaan dan kepuasan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <h2>Our Product</h2>
+        <div class="product-items">
+            <div class="product-item">
+                <img src="image/cake4.jpeg" alt="product 1">
+                <h3>Bolu Ketan Hitam</h3>
+                <h3>Rp.65.000</h3>
+                <p>Rasakan tekstur lembut dan rasa khas ketan hitam yang menggugah selera.</p>
+            </div>
+            <div class="product-item">
+                <img src="image/cake5.jpg" alt="product 2">
+                <h3>Bolu Ketan Pandan</h3>
+                <h3>Rp.67.000</h3>
+                <p>Kombinasi sempurna antara aroma pandan yang harum dan rasa ketan yang lembut.</p>
+            </div>
+            <div class="product-item">
+                <img src="image/cake6.jpeg" alt="product 3">
+                <h3>Bolu Ketan Keju</h3>
+                <h3>Rp.68.000</h3>
+                <p>Perpaduan unik antara ketan yang kenyal dan keju yang gurih.</p>
+            </div>
+            <div class="product-item">
+                <img src="image/cake7.jpg" alt="product 3">
+                <h3>Bolu Ketan vanila</h3>
+                <h3>Rp.67.000</h3>
+                <p>Memiliki tekstur kenyal dan lembut, dengan aroma vanila yang harum dan rasa manis seimbang.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information.</p>
+        <form id="mcuForm">
+            <div class="container">
+                <div class="header">
+                    <img src="image/cake3.jpg" alt="Kue" class="cake-image">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Jumlah:</label>
+                    <input type="text" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="cakevariant">Varian kue:</label>
+                    <select id="cakevariant" name="cakevariant" required>
+                        <option value="" disabled selected>Pilih Varian Kue</option>
+                        <option value="Bolu Ketan Hitam">Bolu Ketan Hitam</option>
+                        <option value="Bolu Ketan Pandan">Bolu Ketan Pandan</option>
+                        <option value="Bolu Ketan Keju">Bolu Ketan Keju</option>
+                        <option value="Bolu Ketan vanila">Bolu Ketan vanila</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <input type="alamat" id="alamat" name="alamat" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="information">Keterangan:</label>
+                    <textarea id="information" name="information" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Order</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+    
+    <footer>
+        <h1>Terima kasih telah berkunjung ke website kami. Selamat menikmati kelezatan Bolu Ketan yang autentik!</h1>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
